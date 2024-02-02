@@ -33,6 +33,15 @@ public class MainController extends JFrame {
 
         JPanel list = new JPanel();
 
+        int[] arr = {15, 15, 15};
+
+        for (int item : arr) {
+            JLabel title = new JLabel(item + "");
+            list.add(title);
+        }
+
+        panel.add(list);
+
         add(panel);
     }
 
